@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>ola mundo</h1>
+    <script>
+        //converção numero
+        // Number.parseInt(n)
+        // Number.parseFloat(n)
+        // Number //o proprio javascript decidi qual tipo
+        // converção string
+        // String(n)
+        // n.toString()
+        var n1 = Number.parseInt(window.prompt('Digite um numero'))
+        var n2 = Number.parseInt(window.prompt('Digite outro numero'))
+        var s = n1 + n2
+        alert('A soma é ' + s) //para exibir valor da variarel pode ser usado concatenação
+
+        var n3 = Number(window.prompt('Digite um numero'))
+        var n4 = Number(window.prompt('Digite outro numero'))
+        var soma = n3 + n4
+        alert(`A soma é ${soma}` ) //ou usar template string ${variavel}
+        
+    </script>
+</body>
+</html>

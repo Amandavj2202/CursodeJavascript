@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique em mim</div><br>
+    <div name="msgum">Clique em mim</div><br>
+    <div id="msgdois">Clique em mim</div><br>
+    <script>
+        var corpo = window.document.body //recebe na variavel corpo o elemento body
+        var p1 = window.document.getElementsByTagName('p')[1] // pegando elemento pela tag p // pegar primeiro elemento colocar [0]
+        var d = window.document.getElementById('msg') //pega o  elemento pelo o ID
+        var e = window.document.getElementsByName('msgum')[0] //pega o  elemento pelo o name
+        var f = window.document.querySelector('div#msgdois')
+        
+        window.document.write('Esta escrito assim ' + p1.innerText)// reescreve o elemento da tag p que foi recebido na variavel p1
+        // innerText pega o texto sem a formatação
+        // innerHTML pega o texto com a formatacao
+
+        //corpo.style.background = 'pink' //muda cor do fundo
+        p1.style.color = 'red' //mudar cor da frase da variavel p1
+
+       d.style.background = 'purple' // muda cor do elemento div
+       //d.innerText = 'Estou aguardando...' 
+       //window.document.getElementById('msg').innerText = 'Olá, mundo'
+
+       e.innerText = 'Estou aqui...' 
+
+       f.style.background = 'yellow'
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex011</title>
+</head>
+<body>
+    <h1>Sistema de pais</h1>
+    Digite pais: <input name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+</body>
+<script>
+    function calcular() {
+            var pais = document.querySelector('input#txtpais').value
+            var res = document.querySelector('div#res')
+            res.innerHTML = 'Seu pais é<strong>' + pais + ' </strong><br>' 
+            if(pais == 'Brasil'){
+                res.innerHTML += 'Brasileiro'
+            } else{
+                res.innerHTML += 'Estrangeiro'
+            }
+       
+        }
+</script>
+</html>
